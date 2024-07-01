@@ -1,0 +1,70 @@
+:root {
+    --background-color: #2C2C2C;
+    --container-bg-color: #3E3E3E;
+    --primary-color: #FF7D29;
+    --secondary-color: #FFBF78;
+    --text-color: #FFFFFF;
+    --input-bg-color: #4D4D4D;
+    --input-border-color: #FF7D29;
+    --button-hover-color: #FF9F50;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.container {
+    background-color: var(--container-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: var(--primary-color);
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: var(--input-bg-color);
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+    color: var(--text-color);
+}
+
+button {
+    background-color: var(--button-hover-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
+
+p#result {
+    margin-top: 20px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
